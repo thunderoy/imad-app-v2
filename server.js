@@ -40,7 +40,7 @@ app.get('/projects/:project_id', function (res, req){
                 res.status(404).send("Project not found");
             }  else {
                   var projectData = result.rows[0];
-                  res.send()
+                  res.send(projectData);
             }
         }
     });
