@@ -32,7 +32,7 @@ app.get('/test-db', function (req, res) {
 });
 
 app.get('/projects/:project_id', function (res, req){
-    pool.query("SELECT * FROM projects WHERE id = ", req.params.project_id, function (err, result){
+    pool.query("SELECT * FROM projects WHERE id = $1", [req.params.project_id], function (err, result){
         if (err) {
             res.status(500).send(err.toString());
         }else{
