@@ -23,7 +23,7 @@ app.get('/', function (req, res) {
 
 var pool = new Pool(config);
 
-app.get('/project/:project_id', function (req, res){
+app.get('/projects/:project_id', function (req, res){
     pool.query("SELECT * FROM projects WHERE id = $1", [req.params.project_id], function (err, result){
         if (err) {
             res.status(500).send(err.toString());
