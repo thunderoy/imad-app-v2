@@ -29,7 +29,7 @@ app.get('/project/:project_id', function (req, res){
                 res.status(404).send("Project not found");
             }  else {
                   var projectData = result.rows[0];
-                  res.send(JSON.stringify(result));
+                  res.send(JSON.stringify(projectData));
             }
         }
     });
