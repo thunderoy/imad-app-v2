@@ -19,17 +19,6 @@ app.get('/', function (req, res) {
 });
 
 var pool = new Pool(config);
-app.get('/test-db', function (req, res) {
-    // make a select request
-    //retuen a response with the results
-    pool.query('SELECT * FROM test', function (err, result){
-        if (err) {
-            res.status(500).send(err.toString());
-        }else{
-            res.send(JSON.stringify(result.rows));
-        }
-    });
-});
 
 app.get('/project/:project_id', function (req, res){
     pool.query("SELECT * FROM projects WHERE id = $1", [req.params.project_id], function (err, result){
@@ -40,7 +29,7 @@ app.get('/project/:project_id', function (req, res){
                 res.status(404).send("Project not found");
             }  else {
                   var projectData = result.rows[0];
-                  res.send(JSON.stringify(projectData));
+                  res.send(JSON.stringify(result));
             }
         }
     });
