@@ -200,7 +200,7 @@ button:hover {
     color: #eee;
     font-size: 56px;
     font-weight: bold;
-    /*padding-top: 20px;*/
+    padding-top: 20px;
 }
 
 .close:hover,
