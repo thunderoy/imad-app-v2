@@ -94,7 +94,7 @@ app.get('/projects/:project_id', function (req, res){
 app.get('/get-comments/:project_id', function (req, res) {
    // make a select request
    // return a response with the results
-   pool.query('SELECT comment.comment, "user".username FROM projects, comment, "user" WHERE projects.id = $1 AND projects.id = comment.project_id AND comment.user_id = "user".id', [req.params.project_id], function (err, result) {
+   pool.query('SELECT comment.comment, "user".username FROM projects, comment, "user" WHERE projects.id = $1 AND projects.id = comment.project_id AND comment.user_id = "user".id ORDER BY comment.timestamp DESC', [req.params.project_id], function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
@@ -117,7 +117,7 @@ app.post('/submit-comment/:project_id', function (req, res) {
                     var projectId = result.rows[0].id;
                     // Now insert the right comment for this project
                     pool.query(
-                        "INSERT INTO comment (comment, project_id, user_id) VALUES ($1, $2, $3)",
+                        "INSERT INTO comment (comment, project_id, user_id, timestamp) VALUES ($1, $2, $3, NOW())",
                         [req.body.comment, projectId, req.session.auth.userId],
                         function (err, result) {
                             if (err) {
