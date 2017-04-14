@@ -58,8 +58,8 @@ function loadLoginForm () {
         };
         
         // Make the request
-        var username = document.getElementById('username').value;
-        var password = document.getElementById('password').value;
+        var username = document.getElementById('username_login').value;
+        var password = document.getElementById('password_login').value;
         console.log(username);
         console.log(password);
         request.open('POST', '/login', true);
@@ -89,9 +89,9 @@ function loadLoginForm () {
         };
         
         // Make the request
-        var username = document.getElementById('username').value;
-        var password = document.getElementById('password').value;
-        var cnf_password = document.getElementById('cnf_password').value;
+        var username = document.getElementById('username_register').value;
+        var password = document.getElementById('password_register').value;
+        var cnf_password = document.getElementById('cnf_password_register').value;
         if (password != cnf_password) {
             alert('Enter same password in both box!!');
         }
