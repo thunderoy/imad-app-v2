@@ -33,6 +33,7 @@ function loadLoginForm () {
                   submit.innerHTML = 'Login';
               }
               loadLogin();
+              loadLoggedInUser(username);
           }  
           // Not done yet
         };
