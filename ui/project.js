@@ -1,4 +1,4 @@
-var currentArticleTitle = window.location.pathname.split('/')[2];
+var currentProjectId = window.location.pathname.split('/')[2];
 
 function loadCommentForm () {
     var commentFormHtml = `
@@ -33,7 +33,7 @@ function loadCommentForm () {
         
         // Make the request
         var comment = document.getElementById('comment_text').value;
-        request.open('POST', '/submit-comment/' + currentArticleTitle, true);
+        request.open('POST', '/submit-comment/' + currentProjectId, true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({comment: comment}));  
         submit.value = 'Submitting...';
@@ -89,7 +89,7 @@ function loadComments () {
         }
     };
     
-    request.open('GET', '/get-comments/' + currentArticleTitle, true);
+    request.open('GET', '/get-comments/' + currentProjectId, true);
     request.send(null);
 }
 
