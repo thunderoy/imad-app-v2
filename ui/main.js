@@ -108,7 +108,7 @@ function loadLoginForm () {
 function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
-        <h3> Hi <i>${username}</i></h3>
+        Hi <i>${username}</i>
         <a href="/logout">Logout</a>
     `;
     modal.style.display = "none";
