@@ -111,6 +111,7 @@ function loadLoggedInUser (username) {
         <h3> Hi <i>${username}</i></h3>
         <a href="/logout">Logout</a>
     `;
+    modal.style.display = "none";
 }
 
 function loadLogin () {
