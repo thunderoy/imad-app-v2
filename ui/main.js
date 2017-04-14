@@ -60,8 +60,8 @@ function loadLoginForm () {
         // Make the request
         var username = document.getElementById('username_login').value;
         var password = document.getElementById('password_login').value;
-        console.log(username);
-        console.log(password);
+        // console.log(username);
+        // console.log(password);
         request.open('POST', '/login', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
@@ -95,12 +95,12 @@ function loadLoginForm () {
         if (password != cnf_password) {
             alert('Enter same password in both box!!');
         }
-        console.log(username);
-        console.log(password);
-        request.open('POST', '/create-user', true);
+        // console.log(username);
+        // console.log(password);
+        request.open('POST', '/register', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
-        register.value = 'Registering...';
+        register.text = 'Registering...';
     
     };
 }
