@@ -195,7 +195,7 @@ button:hover {
 /* The Close Button (x) */
 .closex {
     /*position: absolute;*/
-    /*right: 4px;*/
+    right: 4px;
     top: 4px;
     color: #eee;
     font-size: 56px;
@@ -203,8 +203,8 @@ button:hover {
     padding-top: 20px;
 }
 
-.close:hover,
-.close:focus {
+.closex:hover,
+.closex:focus {
     color: black;
     cursor: pointer;
 }
