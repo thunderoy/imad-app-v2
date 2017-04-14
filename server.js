@@ -118,7 +118,7 @@ app.post('/submit-comment/:project_id', function (req, res) {
                     // Now insert the right comment for this project
                     
                     pool.query(
-                        "INSERT INTO comment (comment, project_id, user_id, timestamp) VALUES ($1, $2, $3, CURRENT_TIMESTAMP)",
+                        "INSERT INTO comment (comment, project_id, user_id, timestamp) VALUES ($1, $2, $3, CURRENT_TIMESTAMP())",
                         [req.body.comment, projectId, req.session.auth.userId],
                         function (err, result) {
                             if (err) {
