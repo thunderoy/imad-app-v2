@@ -50,7 +50,7 @@ function createTemplate (data) {
                   ${heading}
               </h3>
               <div class="text-center">
-                  <a href="${url}"><img src="${image}">
+                  <a href="${url}"><img src="${image}"></a>
               </div>
               <div class="text-center">
                 ${content}
