@@ -1,22 +1,230 @@
-body {
-    font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+#about{
+  background: url("http://66.media.tumblr.com/eb868ce7b1adbb48b58be7ebf77c798e/tumblr_mwvj3pzSsO1t3jokdo4_1280.jpg");
+  padding-top: 50px;
+  color: white;
+  /*background-size: 100% 100%;*/
+  height: 100%;
+
+    /* Full height */
+  min-height: 800px;
+
+    /* Create the parallax scrolling effect */
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.center {
-    text-align: center;
+.my_img{
+  height: 315px;
+  width: 270px;
+  margin-top: 100px;
 }
 
-.text-big {
-    font-size: 300%;
+.box{
+  background-color: black;
+  opacity: .7;
+  border: 0px none black;
+  filter: alpha(opacity=60);
+  border-radius: 70px;
+  height: 247px;
+  width: 590px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 45px;
+  margin-top: 136px;
+  padding-top: 25px;
+  /*font-size: 45px;*/
 }
 
-.bold {
+.downarrow1 {
+  font-size: 50px;
+  margin-top: 75px;
+}
+
+#projects{
+  background: url("https://lh3.googleusercontent.com/pRfm1yPHwPzUUTU8OKfzo8sm6rWHgBQKLaEsIVvKsg87DIWiyqmRszf2j4ObE5du6woH16b_MdFk-E178d00kiREyruTRfEvrWF2cuiM3pR2D1arRh1FZt2hcTop7wP9LZ5gm-i93N3iq-byutGU4kG_3MHjtYMu3gSc9Jlc7c_xiwbYDrfQY-4da5Z3h8XcwgWWFTCI5kIKf_iB9y6xipgUGEOMz7_tMB8EIFJaXZvE2h7m5AbR1yZJxYFqKIzwuyDXL3g_NtDYhLo4j0aiQyKZSaXslxjtrjq7k-mAUzcWXzAWjUJmcNgDxJZNRr3kCJy_tvHju94kaUei4K8C04WDtiJ2yk3h-Y9dviUIrLXqkI9aqgJta5rO1518GWDcKzkd5TlMOC8AxANY3PvsszM5Z4GZOv6eBLdbr8vRFM_AhvBCEN7qn6GPq6zBMnftZ9ViIbkIPlcoJ0QCLacmHf3EfU7L8FDOj6f30dGvvxgLUIB3LMQwP5Wpr2rJ-1izgA-PGLpZUKM1p_wjWBtLKAb7gDSCnNySIuEA4xahpN2RUpqaYCVmE6UCaImcfdMXbEVWfqHoYCj9LmWnIVHhi_xROCPFvtAqkjrMp8X2MAs6Mtk=w1013-h675-no");
+  color: black;
+  padding-top: 100px;
+  /*background-size: 100% 100%;*/
+  height: 100%;
+  height: 800px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.downarrow2 {
+  font-size: 50px;
+}
+
+#contact{
+  background: url("https://lh3.googleusercontent.com/k8JG_7x6ZRe_fb-5Ef2f9sMVEtExajypdAnqpjdBMJUUILGGKMGttL-8pCfeVnKTMXZLZpmderdcJQHCd-dRezLIYvwOSLOvHVB2X8iywfYxFBKXkFiKMCkdAXBRvgZtelJYz6zG9JOP4GglnbT2vNXOLjhB9PZPM_Ywt0bpLqRLkPWpaqAClRHnBAfgBmYQ_KCaHoLFd1z2yUznqGboyOxG5wt85it4kSjxxJkBi-T8dXA90oiI14e-xyThNuyso-wKhmHKxo4rnrFDgxeXUXHHT6u9AJmgmQcFeCDueWN6h_E3kCD-9YcU-5LH7F1vC9PcixQihgsBmZNJ0DltvLUpqu6XBWDbAIw96p-ENb1ZlxFAS5Tls5GQOlopz7sBA7uy97VGo1BBsj1K_3Il3uGwMhgzBxJp3S2iWNWUwQqKTOp_pfG5aAoVCz0XVTaBpHjf_Ad_BA_dfWj5xPnYjTDy_Msz0u2FbA_cJGFgeRkH_xDMEZbWRaDGm8Rt5v9jPFV3hJce9HiNVne6weI5XIDNKgxnjJHI4viw-MasaJVgcM3w1pM2c0CQ5p7LoBdsRUGCVdCLoc86rY3KnoR0EutM8rPIb6FJUX2_DbYZx-SMIsdrjCo=w1013-h675-no");
+  padding-top: 100px;
+  /*background-size: 100% 100%;*/
+  height: 100%;
+  height: 800px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#trainings{
+  background: url("https://lh3.googleusercontent.com/2-wERKeC0SD2qn06FSZFFZaJ9Ds6iIFy1r_exR_-6TOE6V9sdmef79vNZWwIDp_D_apImh94AmLC-pRHgr30vzcVY5h003_3Cbrpa0fxGD0oQ1zOssmWEppJNFvdbY_1bkJHKcfKDFAbMeSQp4Lw7xid7uFTDSUtMsQGVkjAs_beW0T0o5jQhD62r197rDui_YpFp_9qCLSuHTIfBzGgMx0zeU8I9Y7F2cpwIfckJo7FRAAzSRVR4oZL8bCoMFI6Dmvtb-IEkFz9-Ej5w2_oX8c-bHwzNntrytJot-ZkBrHHOka7_btvHK59CNvO3FVMVLD9iv8WGwl5ah1n9amUab6bBA3O3yU3dCGwWwhlbQNRSAro7Qo5j-IKz0qSgEGDJ98azTKU2Vew2mVTVwPgKZ_bLQdj8e9LUW0Rj2Ap_DpxAGE25CBidgVb1RlAR4B1FgCI8Lhn0amISM27efqA5c6zszTZDIyJLOMZBfusbbsVgFkYG8SVXa8OF37-xf-wxPkd9vSIyYbPEveafzs4PSxsOJtV1M0wSFrTJgXCMd-dMeVLBMCkwbE8DSrgn3o5ijBAWyr3NdmefkCqj9t3cmJKNcKbIEVBaMybd-C1E9lfw4wrWJOn=w1013-h675-no");
+  padding-top: 100px;
+  height: 100%;
+  height: 800px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.downarrow3 {
+  font-size: 50px;
+  margin-top: 75px;
+}
+
+.training-heading{
+  font-size: 40px;
+  color: #7a7a52;
+  background-color: black;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.btn{
+  font-size: 70px;
+  border-radius: 50px;
+}
+
+.row2{
+  padding-top: 135px;
+}
+
+.stile{
+  padding-top: 15px;
+  background-color: #d6d6c2;
+}
+
+.row_padding{
+  padding-top: 20px;
+}
+
+body, html {
+    height: 100%;
+}
+
+.img_social{
+  height: 94px;
+  width: 106px;
+}
+
+.img_sof{
+  height: 110px;
+  width: 125px;
+}
+
+.img_project{
+  height: 220px;
+  width: 350px;
+}
+
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 32px 8px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    /*box-sizing: border-box;*/
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #8a8a5c;
+    color: black;
+    padding: 14px 20px;
+    margin: 21px 75px;
+    border: 3px;
+    cursor: pointer;
+    width: 25%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 16px;
+}
+
+.headings{
+  font-family: Sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  width: 30%;
+  background-color: #805500;
+  margin: auto auto;
+  margin-bottom: 80px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.41); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* The Close Button (x) */
+.close {
+    /*position: absolute;*/
+    /*right: 4px;*/
+    top: 4px;
+    color: #f5f5f5;
+    font-size: 42px;
     font-weight: bold;
+    /*padding-top: 20px;*/
 }
 
-.img-medium {
-    height: 200px;
+.close:hover,
+.close:focus {
+    color: black;
+    cursor: pointer;
 }
 
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.verticalLine {
+  border-left: thick solid black;
+  height: 220px;
+}
