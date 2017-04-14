@@ -209,7 +209,7 @@ button:hover {
     cursor: pointer;
 }
 
-/* Add Zoom Animation */
+/* Add Zoom Animation 
 .animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
@@ -223,7 +223,7 @@ button:hover {
 @keyframes animatezoom {
     from {transform: scale(0)} 
     to {transform: scale(1)}
-}
+}*/
 
 .verticalLine {
   border-left: thick solid black;
