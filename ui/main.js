@@ -61,9 +61,10 @@ function loadLoginForm () {
               // Take some action
               if (request.status === 200) {
                   alert('User created successfully');
-                  register.innerHTML = 'Registered!';
+                  register.innerHTML = 'Register';
                   document.getElementById('username_register').value = '';
                   document.getElementById('password_register').value = '';
+                  document.getElementById('cnf_password_register').value = '';
               } else {
                   alert('Could not register the user');
                   register.innerHTML = 'Register';
