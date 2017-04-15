@@ -78,11 +78,12 @@ function loadLoginForm () {
         }
         // console.log(username);
         // console.log(password);
+        else {
         request.open('POST', '/register', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
         register.innerHTML = 'Registering...';
-    
+        }    
     };
 }
 
