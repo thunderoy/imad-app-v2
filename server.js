@@ -40,7 +40,7 @@ function createTemplate (data) {
           <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
           <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
       </head> 
-      <body>
+      <body style="background-color: #e0e0d1;">
           <div class="container-fluid">
               <div>
                   <a href="/">Home</a>
@@ -52,7 +52,7 @@ function createTemplate (data) {
               <div class="text-center">
                   <a href="${url}" target="_blank"><img src="${image}" class="img_project"></a>
               </div>
-              <div class="text-center">
+              <div class="text-center" style="margin:auto auto;">
                 ${content}
               </div>
               <hr/>
