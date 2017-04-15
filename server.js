@@ -51,10 +51,10 @@ function createTemplate (data) {
               </h3>
               <div class="text-center">
                   <a href="${url}" target="_blank"><img src="${image}" class="img_project"></a>
-              </div>
+              </div><hr/>
               <div class="text-center" style="margin:auto auto;">
                 ${content}
-              </div><hr>
+              </div>
               <hr/>
               <h4>Comments</h4>
               <div id="comment_form">
