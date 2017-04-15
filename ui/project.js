@@ -1,6 +1,6 @@
 var currentProjectId = window.location.pathname.split('/')[2];
 
-function loadCommentForm () {
+window.onload = function loadCommentForm () {
     var commentFormHtml = `
         <h5>Submit a comment</h5>
         <textarea id="comment_text" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
@@ -39,7 +39,7 @@ function loadCommentForm () {
         submit.value = 'Submitting...';
         
     };
-}
+};
 
 function loadLogin () {
     // Check if the user is already logged in
@@ -64,7 +64,7 @@ function escapeHTML (text)
     return $div.innerHTML;
 }
 
-function loadComments () {
+window.onload = function loadComments () {
         // Check if the user is already logged in
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
@@ -91,7 +91,7 @@ function loadComments () {
     
     request.open('GET', '/get-comments/' + currentProjectId, true);
     request.send(null);
-}
+};
 
 
 // The first thing to do is to check if the user is logged in!
