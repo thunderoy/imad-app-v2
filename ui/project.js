@@ -39,7 +39,7 @@ function loadCommentForm () {
         submit.value = 'Submitting...';
         
     };
-};
+}
 
 function loadLogin () {
     // Check if the user is already logged in
@@ -91,7 +91,7 @@ function loadComments () {
     
     request.open('GET', '/get-comments/' + currentProjectId, true);
     request.send(null);
-};
+}
 
 
 // The first thing to do is to check if the user is logged in!
