@@ -54,7 +54,7 @@ function createTemplate (data) {
               </div>
               <div class="text-center" style="margin:auto auto;">
                 ${content}
-              </div>
+              </div><hr>
               <hr/>
               <h4>Comments</h4>
               <div id="comment_form">
